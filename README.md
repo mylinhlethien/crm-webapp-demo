@@ -361,17 +361,10 @@ The backend application (called voiceagent-api) is available on [https://github.
 
 You can choose to run the applications locally or deploy them on a Kubernetes cluster. Refer to these two applications.
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
 <!-- CONTACT -->
 ## Contact
 
-My-Linh Le Thien - [@mylinhlethien](https://www.linkedin.com/in/mylinhlethien/) - my-linh.le.thien@ibm.com
+My-Linh Le Thien - [@mylinhlethien](https://www.linkedin.com/in/mylinhlethien/)
 
 Project Link: [https://github.com/mylinhlethien/crm-webapp-demo](https://github.com/mylinhlethien/crm-webapp-demo)
 
