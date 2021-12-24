@@ -1,0 +1,2099 @@
+{
+  "intents": [
+    {
+      "intent": "attestation",
+      "examples": [
+        {
+          "text": "Je souhaiterais avoir une attestation d'assurance"
+        },
+        {
+          "text": "Je souhaiterais avoir une attestation pour mon contrat d'assurance"
+        },
+        {
+          "text": "Je voudrais télécharger mon attestation d'assurance"
+        },
+        {
+          "text": "Je voudrais une attestation pour mon contrat"
+        }
+      ],
+      "description": "Le client demande une attestation de son contrat d'assurance"
+    },
+    {
+      "intent": "General_Ending",
+      "examples": [
+        {
+          "text": "C'est tout, merci."
+        },
+        {
+          "text": "C'était sympa de bavarder avec toi!"
+        },
+        {
+          "text": "C'était un plaisir de chatter avec vous !"
+        },
+        {
+          "text": "D'accord merci. Au revoir!"
+        },
+        {
+          "text": "Donc, je vous remercie beaucoup de votre aide. Je vous souhaite une bonne journée !"
+        },
+        {
+          "text": "J'ai besoin d'une pause, au revoir !"
+        },
+        {
+          "text": "Je dois partir maintenant."
+        },
+        {
+          "text": "Je m'en vais maintenant."
+        },
+        {
+          "text": "Je n'ai plus de questions."
+        },
+        {
+          "text": "Je pars maintenant, à plus !"
+        },
+        {
+          "text": "Je rediscuterai avec vous plus tard."
+        },
+        {
+          "text": "Je vais te parler plus tard !"
+        },
+        {
+          "text": "Je vais vous reparler bientôt."
+        },
+        {
+          "text": "Je voudrais arrêter là."
+        },
+        {
+          "text": "Merci beaucoup, on se reparle plus tard."
+        },
+        {
+          "text": "Nous allos rediscuter bientôt."
+        },
+        {
+          "text": "Ok, c'est tout ce dont j'ai besoin pour l'instant."
+        },
+        {
+          "text": "OK, merci. Au revoir !"
+        },
+        {
+          "text": "Passe une bonne journée !"
+        },
+        {
+          "text": "Pouvons-nous arrêter ?"
+        }
+      ],
+      "description": "Terminez la conversation"
+    },
+    {
+      "intent": "General_Greetings",
+      "examples": [
+        {
+          "text": "Allez, commençons !"
+        },
+        {
+          "text": "âllo, âllo !"
+        },
+        {
+          "text": "Bonjour , c'est votre support informatique , qu'est ce que je peux faire pour vous ?"
+        },
+        {
+          "text": "Bonjour, qui êtes-vous?"
+        },
+        {
+          "text": "Bonjour, quoi de neuf ?"
+        },
+        {
+          "text": "Commencez dès le début s'il vous plaît !"
+        },
+        {
+          "text": "Comment ça se passe aujourd'hui ?"
+        },
+        {
+          "text": "Comment ça va ce soir?"
+        },
+        {
+          "text": "Comment se passe votre journée ?"
+        },
+        {
+          "text": "Comment tu te sens?"
+        },
+        {
+          "text": "Comment va tout le monde ?"
+        },
+        {
+          "text": "Est-ce que les gens sont gentils avec vous?"
+        },
+        {
+          "text": "Est-ce que vous passez une bonne journée?"
+        },
+        {
+          "text": "J'aime parler. Toi aussi ?"
+        },
+        {
+          "text": "J'ai pensé que je pourrais juste te dire bonjour !"
+        },
+        {
+          "text": "Je suis heureux de te parler pour la première fois !"
+        },
+        {
+          "text": "Je voudrais commencer."
+        },
+        {
+          "text": "Puis-je te poser des questions?"
+        },
+        {
+          "text": "Salut, le conseiller !"
+        },
+        {
+          "text": "Tu vas bien ?"
+        }
+      ],
+      "description": "Saluez le bot"
+    },
+    {
+      "intent": "releve-info",
+      "examples": [
+        {
+          "text": "je souhaite fermer mon contrat"
+        },
+        {
+          "text": "Je souhaiterais avoir un relevé d'information"
+        },
+        {
+          "text": "je souhaite résilier mon contrat"
+        },
+        {
+          "text": "je voudrais fermer mon contrat"
+        },
+        {
+          "text": "Je voudrais recevoir mon relevé d'information"
+        },
+        {
+          "text": "relevé d'infor"
+        },
+        {
+          "text": "resiliation"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "timeoutResponse",
+      "examples": [
+        {
+          "text": "vgwPostResponseTimeout"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "transfer-conseiller",
+      "examples": [
+        {
+          "text": "Je voudrais être mis en relation avec un conseiller"
+        },
+        {
+          "text": "Je voudrais parler à un conseiller"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "concurrence",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "AssuranceToutRisk",
+          "synonyms": [
+            "assurance tous risques",
+            "AssuranceToutRisk"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "AssureTout",
+          "synonyms": [
+            "AssurTout"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nomclient",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Andree Bouchut",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Christel Beaujard",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Claude Martin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jean Dupont",
+          "synonyms": [
+            "gens du bon",
+            "gens du coin",
+            "gens du poids",
+            "gens du pont"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "My-Linh Le Thien",
+          "synonyms": [
+            "midi le tien",
+            "milices le sien",
+            "mi ligne le tien",
+            "millions le titien"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Olivier Barrot",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "oui-non",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Non",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Oui",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "raison-resiliation",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Autre raison",
+          "synonyms": [
+            "Aucune raison",
+            "Je déménage",
+            "Pas de raison particulière"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Couverture",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Insatisfaction",
+          "synonyms": [
+            "Insatisfaction lors du traitement d'un sinistre",
+            "je ne suis pas satisfait",
+            "je ne suis pas satisfait du traitement",
+            "je ne suis pas satisfait du traitement dans ce sinistre",
+            "je ne suis pas satisfait du traitement d'un sinistre",
+            "je ne suis pas satisfaite",
+            "je suis insatisfait du traitement d'un sinistre"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Prix",
+          "synonyms": [
+            "Tarif"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "type-contrat",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Automobile",
+          "synonyms": [
+            "auto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Habitation",
+          "synonyms": [
+            "Habitations",
+            "Logement"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-de.functions.appdomain.cloud/api/v1/web/11c5aea9-d9c5-4c7f-bcb4-08daa46f6a2b/default/Cloudant%20retrieve%20odm%20answer.json",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "X-Require-Whisk-Auth",
+          "value": "61buaFXgSJAoxuQGszgGbVsmSmSArUnDMRFLmvUUvw5i"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bienvenue",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bienvenue"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1598270624054",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1598270624054",
+      "previous_sibling": "handler_9_1598270624054"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1604679292477",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_11_1604679292477"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1604920427685",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_11_1604920427685"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1604679292477",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1604679292477",
+      "previous_sibling": "handler_11_1604679292477"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1604920427685",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1604920427685",
+      "previous_sibling": "handler_11_1604920427685"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1597997865184",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_4_1597997865200"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "channels": [
+              {
+                "channel": "voice_telephony"
+              }
+            ],
+            "command_info": {
+              "type": "configure",
+              "parameters": {
+                "narrowband_recognize": {
+                  "model": "fr-FR_NarrowbandModel",
+                  "profanity_filter": true,
+                  "smart_formatting": true,
+                  "language_customization_id": "17549aae-f636-402c-b046-86c28aa9349b",
+                  "x-watson-learning-opt-out": true
+                }
+              }
+            },
+            "response_type": "speech_to_text"
+          }
+        ]
+      },
+      "parent": "slot_1_1597997865184",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1597997865200",
+      "previous_sibling": "handler_4_1597997865200"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1604920427685",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_5_1604920427685"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1598270624054",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_6_1598270624054"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "channels": [
+              {
+                "channel": "voice_telephony"
+              }
+            ],
+            "command_info": {
+              "type": "configure",
+              "parameters": {
+                "narrowband_recognize": {
+                  "model": "fr-FR_NarrowbandModel",
+                  "profanity_filter": true,
+                  "smart_formatting": true,
+                  "acoustic_customization_id": "a15fdbca-6583-478a-aea1-d9079948d702",
+                  "language_customization_id": "a15fdbca-6583-478a-aea1-d9079948d702",
+                  "x-watson-learning-opt-out": true
+                }
+              }
+            },
+            "response_type": "speech_to_text"
+          }
+        ]
+      },
+      "parent": "slot_2_1598271761611",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1598271761629",
+      "previous_sibling": "handler_8_1598271761629"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1604679292477",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_6_1604679292477"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1604920427685",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1604920427685",
+      "previous_sibling": "handler_5_1604920427685"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1598270624054",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1598270624054",
+      "previous_sibling": "handler_6_1598270624054"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1604679292477",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1604679292477",
+      "previous_sibling": "handler_6_1604679292477"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1604937044414",
+      "context": {
+        "type_contrat": "@type-contrat"
+      },
+      "conditions": "@type-contrat",
+      "event_name": "input",
+      "dialog_node": "handler_7_1604937044425"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598271761611",
+      "context": {
+        "nomclient": "@nomclient"
+      },
+      "conditions": "@nomclient",
+      "event_name": "input",
+      "dialog_node": "handler_8_1598271761629"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1598270624054",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_9_1598270624054"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1604937044414",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1604937044425",
+      "previous_sibling": "handler_7_1604937044425"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris votre raison de résiliation, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_46_1597998867049",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_48_1597998867049"
+      },
+      "conditions": "true",
+      "dialog_node": "node_10_1604178397140",
+      "previous_sibling": "node_48_1597998867049"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Je peux transférer votre appel vers un de nos conseillers. Cela vous convient-il ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#transfer-conseiller",
+      "dialog_node": "node_10_1639749519452",
+      "previous_sibling": "Bienvenue"
+    },
+    {
+      "type": "frame",
+      "parent": "Bienvenue",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-number",
+      "dialog_node": "node_1_1597997829844",
+      "previous_sibling": "response_10_1599135432296"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris votre nom, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1597997829844",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1598271689646"
+      },
+      "conditions": "true",
+      "dialog_node": "node_1_1604177800995",
+      "previous_sibling": "node_3_1598271689646"
+    },
+    {
+      "type": "standard",
+      "title": "refus transfer d'appel --> RDV",
+      "output": {
+        "text": {
+          "values": [
+            "Souhaiteriez-vous plutôt prendre rendez-vous avec un de nos conseillers ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message == \"Je vous propose de vous mettre en relation avec un conseiller\" && @oui-non:Non",
+      "dialog_node": "node_1_1604679190281",
+      "previous_sibling": "node_5_1605014272261"
+    },
+    {
+      "type": "standard",
+      "title": "Prise de RDV - pas de recommandation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Quel jour vous arrange le plus ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message == \"Pas de recommandation\" && @oui-non:Oui",
+      "dialog_node": "node_1_1604920427683",
+      "previous_sibling": "node_9_1604677609970"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris la date, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1604677609970",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1598270624054"
+      },
+      "conditions": "true",
+      "dialog_node": "node_15_1604679718154",
+      "previous_sibling": "node_3_1598270624054"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris la date, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1604920427683",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1604920427685"
+      },
+      "conditions": "true",
+      "dialog_node": "node_15_1604920427685",
+      "previous_sibling": "node_2_1604920427685"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris l'heure, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1598270624054",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1598270624054"
+      },
+      "conditions": "true",
+      "dialog_node": "node_16_1604679743506",
+      "previous_sibling": "node_4_1598270624054"
+    },
+    {
+      "type": "standard",
+      "title": "Prise de RDV",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Quel jour vous arrange le plus ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1604679190281",
+      "conditions": "@oui-non:Oui",
+      "dialog_node": "node_2_1604679292476"
+    },
+    {
+      "type": "frame",
+      "output": {},
+      "parent": "node_1_1604920427683",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-date",
+      "dialog_node": "node_2_1604920427685"
+    },
+    {
+      "type": "standard",
+      "title": "Refus recommandation",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "D'accord. Nous venons de vous envoyer un SMS afin de confirmer votre résiliation. Nous sommes navrés de vous voir partir."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "user_defined": {
+              "vgwAction": {
+                "command": "vgwActSendSMS",
+                "parameters": {
+                  "message": "Vous trouverez votre résiliation de contrat en cliquant ici : www.resiliation-contrat.com"
+                }
+              }
+            },
+            "response_type": "user_defined"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "@oui-non:Non",
+      "dialog_node": "node_2_1629450503057",
+      "previous_sibling": "node_1_1604920427683"
+    },
+    {
+      "type": "frame",
+      "parent": "node_9_1604677609970",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-date",
+      "dialog_node": "node_3_1598270624054"
+    },
+    {
+      "type": "frame",
+      "parent": "node_1_1597997829844",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@nomclient",
+      "dialog_node": "node_3_1598271689646",
+      "previous_sibling": "response_5_1599056993187"
+    },
+    {
+      "type": "standard",
+      "title": "Appel ODM",
+      "parent": "node_48_1597998867049",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {},
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@oui-non:Oui || #timeoutResponse",
+      "dialog_node": "node_3_1604414789018",
+      "previous_sibling": "response_5_1599057939114"
+    },
+    {
+      "type": "frame",
+      "output": {},
+      "parent": "node_2_1604679292476",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-date",
+      "dialog_node": "node_3_1604679292477"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1604679190281",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1604679292476"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1604679603598",
+      "previous_sibling": "node_2_1604679292476"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris la date, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1604679292476",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1604679292477"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1604679622251",
+      "previous_sibling": "node_3_1604679292477"
+    },
+    {
+      "type": "frame",
+      "output": {},
+      "parent": "node_2_1604920427685",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-time",
+      "dialog_node": "node_3_1604920427685",
+      "previous_sibling": "response_14_1604920427685"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1604414789018",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1604414789018"
+      },
+      "conditions": "#timeoutResponse",
+      "dialog_node": "node_3_1639668485381",
+      "previous_sibling": "node_2_1629450503057"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General_Greetings",
+      "dialog_node": "node_4_1596187614776",
+      "previous_sibling": "node_10_1639749519452"
+    },
+    {
+      "type": "frame",
+      "parent": "node_3_1598270624054",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-time",
+      "dialog_node": "node_4_1598270624054",
+      "previous_sibling": "response_10_1599058026512"
+    },
+    {
+      "type": "frame",
+      "output": {},
+      "parent": "node_3_1604679292477",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-time",
+      "dialog_node": "node_4_1604679292477",
+      "previous_sibling": "response_14_1604679292477"
+    },
+    {
+      "type": "frame",
+      "parent": "node_8_1597851692033",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@type-contrat",
+      "dialog_node": "node_46_1597998867049",
+      "previous_sibling": "response_9_1599057275624"
+    },
+    {
+      "type": "standard",
+      "title": "Raison résiliation",
+      "parent": "node_46_1597998867049",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@raison-resiliation || @concurrence",
+      "dialog_node": "node_48_1597998867049",
+      "previous_sibling": "response_7_1599057921657"
+    },
+    {
+      "type": "standard",
+      "title": "Réponse web",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "D'accord. Le lien de résiliation vient de vous être envoyé. Nous sommes navrés de vous voir partir."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "user_defined": {
+              "vgwAction": {
+                "command": "vgwActSendSMS",
+                "parameters": {
+                  "message": "Vous trouverez votre résiliation de contrat en cliquant ici : www.resiliation-contrat.com"
+                }
+              }
+            },
+            "response_type": "user_defined"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message == \"Vous recevrez par SMS le lien afin de confirmer votre résiliation\" && @oui-non:Oui",
+      "dialog_node": "node_5_1605014272261",
+      "previous_sibling": "node_6_1604676724573"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris votre numéro client, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bienvenue",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1597997829844"
+      },
+      "conditions": "true",
+      "dialog_node": "node_6_1604177774715",
+      "previous_sibling": "node_1_1597997829844"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris le type de contrat, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1597851692033",
+      "conditions": "true",
+      "dialog_node": "node_6_1604177973314",
+      "previous_sibling": "node_46_1597998867049"
+    },
+    {
+      "type": "standard",
+      "title": "Transfer d'appel",
+      "output": {
+        "generic": [
+          {
+            "response_type": "connect_to_agent",
+            "transfer_info": {
+              "target": {
+                "service_desk": {
+                  "sip": {
+                    "uri": "tel:+33651135925",
+                    "transfer_headers": [
+                      {
+                        "name": "Customer-Header1",
+                        "value": "Some-Custom-Info"
+                      }
+                    ],
+                    "transfer_headers_send_method": "refer_to_header"
+                  }
+                }
+              }
+            },
+            "agent_available": {
+              "message": "Vous allez être mis en relation avec un conseiller. Veuillez patienter"
+            },
+            "agent_unavailable": {
+              "message": "Tous nos agents sont actuellement occupés."
+            },
+            "message_to_human_agent": "Résiliation contrat"
+          },
+          {
+            "values": [
+              {
+                "text": "Vous allez être mis en relation avec un conseiller. Veuillez patienter"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message == \"Je vous propose de vous mettre en relation avec un conseiller\" && @oui-non:Oui",
+      "dialog_node": "node_6_1604676724573"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "response_type": "connect_to_agent",
+            "transfer_info": {
+              "target": {
+                "service_desk": {
+                  "sip": {
+                    "uri": "tel:+33651135925",
+                    "transfer_headers": [
+                      {
+                        "name": "Customer-Header1",
+                        "value": "Some-Custom-Info"
+                      }
+                    ],
+                    "transfer_headers_send_method": "refer_to_header"
+                  }
+                }
+              }
+            },
+            "agent_available": {
+              "message": "Vous allez être mis en relation avec un conseiller. Veuillez patienter"
+            },
+            "agent_unavailable": {
+              "message": "Tous nos agents sont actuellement occupés."
+            },
+            "message_to_human_agent": "Résiliation contrat"
+          },
+          {
+            "values": [
+              {
+                "text": "Vous allez être mis en relation avec un conseiller. Veuillez patienter"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1639749519452",
+      "conditions": "@oui-non:Oui",
+      "dialog_node": "node_6_1639749937865"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas bien compris, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_48_1597998867049",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1604414789018"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1606681830960",
+      "previous_sibling": "node_8_1629449663088"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#releve-info",
+      "dialog_node": "node_8_1597851692033",
+      "previous_sibling": "node_4_1596187614776"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris l'heure, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604679292477",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1604679292477"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1604679647311",
+      "previous_sibling": "node_4_1604679292477"
+    },
+    {
+      "type": "standard",
+      "title": "non",
+      "output": {
+        "text": {
+          "values": [
+            "D'accord. Nous venons de vous envoyer un SMS afin de confirmer votre résiliation. Nous sommes navrés de vous voir partir."
+          ],
+          "selection_policy": "sequential"
+        },
+        "vgwActionSequence": [
+          {
+            "command": "vgwActSendSMS",
+            "parameters": {
+              "message": "Vous trouverez votre résiliation de contrat en cliquant ici : www.resiliation-contrat.com"
+            }
+          },
+          {
+            "command": "vgwActPlayText"
+          }
+        ]
+      },
+      "parent": "node_48_1597998867049",
+      "conditions": "@oui-non:Non",
+      "dialog_node": "node_8_1629449663088",
+      "previous_sibling": "node_3_1604414789018"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1639749519452",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1639749937865"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1639749974699",
+      "previous_sibling": "node_6_1639749937865"
+    },
+    {
+      "type": "standard",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#General_Ending",
+      "dialog_node": "node_9_1596187523467",
+      "previous_sibling": "node_8_1597851692033"
+    },
+    {
+      "type": "standard",
+      "title": "Prise de RDV",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Quel jour vous arrange le plus ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message == \"Vous pouvez prendre RDV avec un de nos conseillers\" && @oui-non:Oui",
+      "dialog_node": "node_9_1604677609970",
+      "previous_sibling": "node_1_1604679190281"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excusez-moi je n'ai pas compris l'heure, veuillez répéter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1604920427685",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1604920427685"
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1604920427685",
+      "previous_sibling": "node_3_1604920427685"
+    },
+    {
+      "type": "standard",
+      "title": "true",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Je n'ai pas compris, pourriez-vous répéter ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1604414789018"
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1606681115099",
+      "previous_sibling": "node_3_1639668485381"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Votre numéro client est le $number. Pourriez-vous me renseigner votre nom ? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1597997829844",
+      "conditions": "@sys-number",
+      "dialog_node": "response_10_1599056992992"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Bonjour, comment puis-je vous aider ? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1596187614776",
+      "conditions": "#General_Greetings",
+      "dialog_node": "response_10_1599057009008"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_3_1598270624054",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1599058026512",
+      "previous_sibling": "response_2_1599058026318"
+    },
+    {
+      "type": "response_condition",
+      "parent": "Bienvenue",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1599135432296",
+      "previous_sibling": "response_3_1599061314223"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nous pouvons vous proposer de revoir le tarif de votre contrat. Seriez-vous intéressé ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_48_1597998867049",
+      "conditions": "@raison-resiliation:Prix",
+      "dialog_node": "response_10_1604410826836",
+      "previous_sibling": "response_2_1604405850361"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Souhaiteriez-vous prendre RDV avec un de nos conseillers pour en discuter ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message == \"Pas de recommandation\"",
+      "dialog_node": "response_10_1604920316219",
+      "previous_sibling": "node_9_1606681115099"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Tout le reste",
+      "conditions": "anything_else",
+      "dialog_node": "response_1_1599135390362",
+      "previous_sibling": "response_6_1599135390086"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A quelle heure voulez-vous fixer le rendez-vous le $date ? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1604679292477",
+      "conditions": "@sys-date",
+      "dialog_node": "response_13_1604679292477"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A quelle heure voulez-vous fixer le rendez-vous le $date ? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1604920427685",
+      "conditions": "@sys-date",
+      "dialog_node": "response_13_1604920427685"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_3_1604679292477",
+      "conditions": "anything_else",
+      "dialog_node": "response_14_1604679292477",
+      "previous_sibling": "response_13_1604679292477"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_2_1604920427685",
+      "conditions": "anything_else",
+      "dialog_node": "response_14_1604920427685",
+      "previous_sibling": "response_13_1604920427685"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A quelle heure voulez-vous fixer le rendez-vous le $date ? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1598270624054",
+      "conditions": "@sys-date",
+      "dialog_node": "response_2_1599058026318"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_4_1598270624054",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1599058041183",
+      "previous_sibling": "response_4_1599058040351"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Nous sommes navrés de votre insatisfaction. Souhaiteriez-vous en discuter avec un conseiller ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_48_1597998867049",
+      "conditions": "@raison-resiliation:Insatisfaction",
+      "dialog_node": "response_2_1604405850361"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "J'ai compris que vous souhaitez résilier votre contrat $type_contrat. Pourriez-vous m'indiquer vos raisons ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_46_1597998867049",
+      "conditions": "@type-contrat",
+      "dialog_node": "response_3_1599057921438",
+      "previous_sibling": "slot_7_1604937044414"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "channels": [
+              {
+                "channel": "voice_telephony"
+              }
+            ],
+            "command_info": {
+              "type": "disable_barge_in"
+            },
+            "response_type": "text_to_speech"
+          },
+          {
+            "values": [
+              {
+                "text": "Bonjour et bienvenue chez MonAssureur.com. Veuillez taper votre numéro client. Tapez # lorsque vous avez terminé."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "channels": [
+              {
+                "channel": "voice_telephony"
+              }
+            ],
+            "command_info": {
+              "type": "collect",
+              "parameters": {
+                "ignore_speech": true,
+                "termination_key": "#"
+              }
+            },
+            "response_type": "dtmf"
+          }
+        ]
+      },
+      "parent": "Bienvenue",
+      "conditions": "welcome",
+      "dialog_node": "response_3_1599061314223"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nous pouvons vous proposer de revoir la couverture de votre contrat. Seriez-vous intéressé ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_48_1597998867049",
+      "conditions": "@raison-resiliation:Couverture",
+      "dialog_node": "response_3_1604410859777",
+      "previous_sibling": "response_10_1604410826836"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "De quel contrat s'agit-il ?",
+            "Quel contrat souhaiteriez-vous fermer ?",
+            "Quel contrat souhaiteriez-vous résilier ?",
+            "Quel contrat votre demande concerne-t-elle ?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_8_1597851692033",
+      "conditions": "#releve-info",
+      "dialog_node": "response_4_1599057275448"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vous avez pris rendez-vous le $date à $time. Vous recevrez un SMS de confirmation pour votre rendez-vous."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "user_defined": {
+              "vgwAction": {
+                "command": "vgwActSendSMS",
+                "parameters": {
+                  "message": "CONFIRMATION : Vous avez un RDV avec un de nos conseillers le $date à $time."
+                }
+              }
+            },
+            "response_type": "user_defined"
+          }
+        ]
+      },
+      "parent": "node_4_1598270624054",
+      "conditions": "@sys-time",
+      "dialog_node": "response_4_1599058040351"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_9_1596187523467",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1599058459312",
+      "previous_sibling": "response_8_1599058458803"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<? $webhook_result_1.message ?>. Cela vous convient-il ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "$webhook_result_1.message",
+      "dialog_node": "response_4_1624538633079",
+      "previous_sibling": "response_10_1604920316219"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_1_1597997829844",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1599056993187",
+      "previous_sibling": "response_10_1599056992992"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_48_1597998867049",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1599057939114",
+      "previous_sibling": "response_7_1604410880364"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Je n'ai pas compris. Vous pouvez essayer de reformuler. "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Tout le reste",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1599135390086"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_46_1597998867049",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1599057921657",
+      "previous_sibling": "response_3_1599057921438"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "êtes-vous sûr de vouloir résilier votre contrat ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_48_1597998867049",
+      "conditions": "@raison-resiliation:(Autre raison)",
+      "dialog_node": "response_7_1604410880364",
+      "previous_sibling": "response_3_1604410859777"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vous avez pris rendez-vous le $date à $time. Vous recevrez un SMS de confirmation pour votre rendez-vous."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "user_defined": {
+              "vgwAction": {
+                "command": "vgwActSendSMS",
+                "parameters": {
+                  "message": "CONFIRMATION : Vous avez un RDV avec un de nos conseillers le $date à $time."
+                }
+              }
+            },
+            "response_type": "user_defined"
+          }
+        ]
+      },
+      "parent": "node_3_1604920427685",
+      "conditions": "@sys-time",
+      "dialog_node": "response_7_1604920427685"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1598271689646",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1598967553934",
+      "previous_sibling": "response_9_1598967553771"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_4_1596187614776",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1599057009207",
+      "previous_sibling": "response_10_1599057009008"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MonAssureur.com vous remercie pour votre appel. Au revoir !"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1596187523467",
+      "conditions": "#General_Ending",
+      "dialog_node": "response_8_1599058458803"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1604414789018",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1604415012697",
+      "previous_sibling": "response_4_1624538633079"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vous avez pris rendez-vous le $date à $time. Vous recevrez un SMS de confirmation pour votre rendez-vous."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "user_defined": {
+              "vgwAction": {
+                "command": "vgwActSendSMS",
+                "parameters": {
+                  "message": "CONFIRMATION : Vous avez un RDV avec un de nos conseillers le $date à $time."
+                }
+              }
+            },
+            "response_type": "user_defined"
+          }
+        ]
+      },
+      "parent": "node_4_1604679292477",
+      "conditions": "@sys-time",
+      "dialog_node": "response_8_1604679292477"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_3_1604920427685",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1604920427685",
+      "previous_sibling": "response_7_1604920427685"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Bonjour $nomclient. Comment puis-je vous aider ? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1598271689646",
+      "conditions": "@nomclient",
+      "dialog_node": "response_9_1598967553771"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_8_1597851692033",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1599057275624",
+      "previous_sibling": "response_4_1599057275448"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_4_1604679292477",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1604679292477",
+      "previous_sibling": "response_8_1604679292477"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1604679292477",
+      "variable": "$date",
+      "dialog_node": "slot_10_1604679292477",
+      "previous_sibling": "node_8_1604679647311"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1604920427685",
+      "variable": "$date",
+      "dialog_node": "slot_10_1604920427685",
+      "previous_sibling": "node_9_1604920427685"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1597997829844",
+      "variable": "$number",
+      "dialog_node": "slot_1_1597997865184",
+      "previous_sibling": "node_1_1604177800995"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1598271689646",
+      "variable": "$nomclient",
+      "dialog_node": "slot_2_1598271761611",
+      "previous_sibling": "response_8_1598967553934"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1604920427685",
+      "variable": "$time",
+      "dialog_node": "slot_4_1604920427685",
+      "previous_sibling": "response_8_1604920427685"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1598270624054",
+      "variable": "$time",
+      "dialog_node": "slot_5_1598270624054",
+      "previous_sibling": "response_2_1599058041183"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1604679292477",
+      "variable": "$time",
+      "dialog_node": "slot_5_1604679292477",
+      "previous_sibling": "response_9_1604679292477"
+    },
+    {
+      "type": "slot",
+      "parent": "node_46_1597998867049",
+      "variable": "$type_contrat",
+      "dialog_node": "slot_7_1604937044414"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1598270624054",
+      "variable": "$date",
+      "dialog_node": "slot_8_1598270624054",
+      "previous_sibling": "node_16_1604679743506"
+    },
+    {
+      "type": "standard",
+      "title": "Tout le reste",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Tout le reste",
+      "previous_sibling": "node_9_1596187523467",
+      "disambiguation_opt_out": true
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "à 17h"
+    },
+    {
+      "text": "aucune raison particulière"
+    },
+    {
+      "text": "j'ai une insatisfaction dans le traitement d'un sinistre je suis en colère"
+    },
+    {
+      "text": "je ne suis pas satisfait de ma couverture"
+    },
+    {
+      "text": "je ne suis pas satisfait du traitement d'un sinistre"
+    },
+    {
+      "text": "le prix est trop élevé je voudrais partir chez Assurtoutrisk"
+    },
+    {
+      "text": "My-Linh Le Thien"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Vouliez-vous dire:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Aucune de précédent"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Vouliez-vous dire:"
+    }
+  },
+  "learning_opt_out": true,
+  "name": "voice-agent-assurance-twilio-v2",
+  "language": "fr",
+  "description": "new version"
+}

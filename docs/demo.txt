@@ -1,0 +1,61 @@
+3 scénarios :
+1er scénario : Jean / faible potentiel, pas de raison de résiliation particulière --> SMS avec le lien vers le relevé d'informations
+2ème scénario : Christel / haut potentiel, citer le nom des concurrents + prix élevé --> proposition de transfer d'appel, ou prise de RDV
+3ème scénario : My-Linh / haut potentiel, insatisfaction + colère --> transfer d'appel
+
+Scénario 1 :
+- Bonjour et bienvenue chez MonAssureur.com. Veuillez taper votre numéro client. Tapez # lorsque vous avez terminé.
+- 576982# (taper sur le clavier du téléphone)
+- Votre numéro client est le 576982. Pouvez-vous me renseigner votre nom ?
+- Jean Dupont
+- Bonjour Jean Dupont. Comment puis-je vous aider ?
+- je voudrais résilier mon contrat
+- De quel contrat voulez-vous le relevé d'information ?
+- Mon contrat habitation
+- J'ai compris que vous souhaitez résilier votre contrat Habitation. Pourriez-vous m'indiquer vos raisons ?
+- je n'ai pas de raison particulière car je déménage
+- êtes-vous sûr(e) de vouloir résilier votre contrat ?
+- oui
+- Vous recevrez par SMS le lien vers votre relevé d'information. Cela vous convient-il ? (résultats ODM)
+- Oui
+- D'accord. Le lien de votre relevé d'information vient de vous être envoyé. Nous sommes navrés de vous voir partir.
+
+Scénario 2 :
+- Bonjour et bienvenue chez MonAssureur.com. Veuillez taper votre numéro client. Tapez # lorsque vous avez terminé.
+- 376213# (taper sur le clavier du téléphone)
+- Votre numéro client est le 376213. Pouvez-vous me renseigner votre nom ?
+- Christel Beaujard
+- Bonjour Christel Beaujard. Comment puis-je vous aider ?
+- je voudrais avoir mon relevé d'information
+- De quel contrat voulez-vous le relevé d'information ?
+- Mon contrat automobile
+- J'ai compris que vous souhaitez résilier votre contrat Automobile. Pourriez-vous m'indiquer vos raisons ?
+- le prix est trop élevé, c'est moins cher chez AssuranceToutRisk
+- Nous pouvons vous proposer de revoir la couverture de votre contrat. Seriez-vous intéressés ?
+- oui s'il vous plaît
+- Je vous propose de vous mettre en relation avec un conseiller. Cela vous convient-il ? (résultats ODM)
+- Non je n'ai pas envie
+- Souhaiteriez-vous plutôt prendre rendez-vous avec un de nos conseillers ?
+- oui je préfère
+- Quel jour vous arrange le plus ?
+- demain
+- A quelle heure voulez-vous fixer le rendez-vous ?
+- à dix heures
+- Vous avez pris rendez-vous le $date à $time.(avec les bonnes valeurs) Vous allez recevoir un SMS de confirmation pour votre rendez-vous. MonAssureur.com vous remercie pour votre appel  (envoi du SMS)
+
+Scénario 3 :
+- Bonjour et bienvenue chez MonAssureur.com. Veuillez taper votre numéro client. Tapez # lorsque vous avez terminé.
+- 923546# (taper sur le clavier du téléphone)
+- Votre numéro client est le 923546. Pourriez-vous me renseigner votre nom ?
+- My-Linh Le Thien
+- Bonjour My-Linh Le Thien. Comment puis-je vous aider ?
+- je voudrais résilier mon contrat
+- De quel contrat voulez-vous le relevé d'information ?
+- Mon contrat habitation
+- J'ai compris que vous souhaitez résilier votre contrat Habitation. Pourriez-vous m'indiquer vos raisons ?
+- je ne suis pas satisfaite du traitement d'un sinistre, je suis très en colère
+- Nous sommes navrés de votre insatisfaction. Souhaiteriez-vous en discuter avec un conseiller ?
+- oui s'il vous plaît
+- Je vais vous mettre en relation avec un conseiller. Cela vous convient-il ? (résultats ODM)
+- Oui
+- Vous allez être mis en relation avec un conseiller. Veuillez patienter (Transfert d'appel)

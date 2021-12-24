@@ -1,0 +1,87 @@
+[
+    {
+        "id": "1bfdb3cf.e509bc",
+        "type": "function",
+        "z": "71b56e13.6e8ed",
+        "name": "Cloudant query",
+        "func": "msg.headers = {\n    \"Content-Type\": \"application/json\"\n}\n\nmsg.payload = {\n   \"selector\": {\n      \"_id\": {\n         \"$eq\": \"cfad004d78c0decb7b08aa3a6ce525dd\"\n      }\n   },\n   \"fields\": [\n      \"_id\",\n      \"_rev\",\n      \"urgence\",\n      \"action\",\n      \"message\"\n   ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 380,
+        "y": 580,
+        "wires": [
+            [
+                "9792d4a2.264328"
+            ]
+        ]
+    },
+    {
+        "id": "9792d4a2.264328",
+        "type": "http request",
+        "z": "71b56e13.6e8ed",
+        "name": "Cloudant call",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "body",
+        "url": "https://c14f1e0e-cb28-4bda-a48d-5ba8af0e747e-bluemix.cloudant.com/odm-answer/_find",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 610,
+        "y": 600,
+        "wires": [
+            [
+                "c7e228ff.64fe28",
+                "64af60af.1683a"
+            ]
+        ]
+    },
+    {
+        "id": "64af60af.1683a",
+        "type": "http response",
+        "z": "71b56e13.6e8ed",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c7e228ff.64fe28",
+        "type": "debug",
+        "z": "71b56e13.6e8ed",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "af751d16.601eb",
+        "type": "http in",
+        "z": "71b56e13.6e8ed",
+        "name": "",
+        "url": "/odm-answer",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "1bfdb3cf.e509bc"
+            ]
+        ]
+    }
+]
