@@ -356,8 +356,8 @@ This is the user interface for the demo.
 <img src="docs/github_images/finalinterface.png" width="700" height="auto">
 </p>
 
-The frontend application (here called React-socket) is available on [https://github.com/My-Linh-Le-Thien/react-socket-demo](https://github.com/My-Linh-Le-Thien/react-socket-demo) <br/>
-The backend application (called voiceagent-api) is available on [https://github.com/My-Linh-Le-Thien/voiceagent-api-demo](https://github.com/My-Linh-Le-Thien/voiceagent-api-demo)
+The frontend application (here called React-socket) is available on [https://github.com/mylinhlethien/react-socket-demo](https://github.com/mylinhlethien/react-socket-demo) <br/>
+The backend application (called voiceagent-api) is available on [https://github.com/mylinhlethien/voiceagent-api-demo](https://github.com/mylinhlethien/voiceagent-api-demo)
 
 You can choose to run the applications locally or deploy them on a Kubernetes cluster. Refer to these two applications.
 
@@ -373,5 +373,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 My-Linh Le Thien - [@mylinhlethien](https://www.linkedin.com/in/mylinhlethien/) - my-linh.le.thien@ibm.com
 
-Project Link: [https://github.com/My-Linh-Le-Thien/crm-webapp-demo](https://github.com/My-Linh-Le-Thien/crm-webapp-demo)
+Project Link: [https://github.com/mylinhlethien/crm-webapp-demo](https://github.com/mylinhlethien/crm-webapp-demo)
 
