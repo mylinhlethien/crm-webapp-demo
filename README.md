@@ -7,6 +7,12 @@ The initial project was implemented in French language but it can be used in oth
 
 Watson automatically detects the intents of the client and qualifies their demand. According to the client's profile, their emotion and reason for call, the voicebot will adapt the answer: call transfer, SMS sending or planning a meeting.
 
+Here is the simplified architecture of the demo:
+
+<p align="center">
+<img src="docs/github_images/callcenterarchitecture.png" width="700" height="auto">
+</p>
+
 ---
 # Requirements
 
