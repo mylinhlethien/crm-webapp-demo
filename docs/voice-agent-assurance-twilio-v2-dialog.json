@@ -151,6 +151,10 @@
       "description": "Saluez le bot"
     },
     {
+      "intent": "oui",
+      "examples": []
+    },
+    {
       "intent": "releve-info",
       "examples": [
         {
@@ -182,6 +186,12 @@
       "examples": [
         {
           "text": "vgwPostResponseTimeout"
+        },
+        {
+          "text": "vgwTimeoutResponse"
+        },
+        {
+          "text": "vwgTimeoutResponse"
         }
       ],
       "description": ""
@@ -273,12 +283,25 @@
         {
           "type": "synonyms",
           "value": "Non",
-          "synonyms": []
+          "synonyms": [
+            "je n'ai pas envie",
+            "pas vraiment"
+          ]
         },
         {
           "type": "synonyms",
           "value": "Oui",
-          "synonyms": []
+          "synonyms": [
+            "avec plaisir",
+            "ça me va",
+            "cela me convient",
+            "effectivement",
+            "je suis d'accord",
+            "ok",
+            "okay",
+            "tout à fait",
+            "volontiers"
+          ]
         }
       ],
       "fuzzy_match": true
@@ -291,7 +314,9 @@
           "value": "Autre raison",
           "synonyms": [
             "Aucune raison",
+            "déménagement",
             "Je déménage",
+            "je ne sais pas vraiment",
             "Pas de raison particulière"
           ]
         },
@@ -310,13 +335,16 @@
             "je ne suis pas satisfait du traitement dans ce sinistre",
             "je ne suis pas satisfait du traitement d'un sinistre",
             "je ne suis pas satisfaite",
-            "je suis insatisfait du traitement d'un sinistre"
+            "je suis insatisfait",
+            "je suis insatisfait du traitement d'un sinistre",
+            "je suis mécontent"
           ]
         },
         {
           "type": "synonyms",
           "value": "Prix",
           "synonyms": [
+            "c'est trop cher",
             "Tarif"
           ]
         }
@@ -369,7 +397,7 @@
   },
   "webhooks": [
     {
-      "url": "https://eu-de.functions.appdomain.cloud/api/v1/web/11c5aea9-d9c5-4c7f-bcb4-08daa46f6a2b/default/Cloudant%20retrieve%20odm%20answer.json",
+      "url": "https://eu-de.functions.appdomain.cloud/api/v1/web/11c5aea9-d9c5-4c7f-bcb4-08daa46f6a2b/default/call%20ODM%20recommandation.json",
       "name": "main_webhook",
       "headers": [
         {
@@ -905,8 +933,8 @@
     },
     {
       "type": "standard",
-      "title": "Appel ODM",
-      "parent": "node_48_1597998867049",
+      "title": "Appel ODM - webhook",
+      "parent": "node_9_1642693852395",
       "actions": [
         {
           "name": "main_webhook",
@@ -920,9 +948,8 @@
           "mcr": true
         }
       },
-      "conditions": "@oui-non:Oui || #timeoutResponse",
-      "dialog_node": "node_3_1604414789018",
-      "previous_sibling": "response_5_1599057939114"
+      "conditions": "true",
+      "dialog_node": "node_3_1604414789018"
     },
     {
       "type": "frame",
@@ -1001,13 +1028,26 @@
     },
     {
       "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "anything_else"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
       "parent": "node_3_1604414789018",
       "next_step": {
         "behavior": "jump_to",
         "selector": "condition",
         "dialog_node": "node_3_1604414789018"
       },
-      "conditions": "#timeoutResponse",
+      "conditions": "anything_else",
       "dialog_node": "node_3_1639668485381",
       "previous_sibling": "node_2_1629450503057"
     },
@@ -1258,7 +1298,7 @@
       "parent": "node_48_1597998867049",
       "next_step": {
         "behavior": "jump_to",
-        "selector": "user_input",
+        "selector": "condition",
         "dialog_node": "node_3_1604414789018"
       },
       "conditions": "true",
@@ -1326,7 +1366,7 @@
       "parent": "node_48_1597998867049",
       "conditions": "@oui-non:Non",
       "dialog_node": "node_8_1629449663088",
-      "previous_sibling": "node_3_1604414789018"
+      "previous_sibling": "node_9_1642693852395"
     },
     {
       "type": "standard",
@@ -1437,6 +1477,16 @@
       "previous_sibling": "node_3_1639668485381"
     },
     {
+      "type": "standard",
+      "parent": "node_48_1597998867049",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@oui-non:Oui || #timeoutResponse",
+      "dialog_node": "node_9_1642693852395",
+      "previous_sibling": "response_5_1599057939114"
+    },
+    {
       "type": "response_condition",
       "output": {
         "text": {
@@ -1505,7 +1555,7 @@
           {
             "values": [
               {
-                "text": "Souhaiteriez-vous prendre RDV avec un de nos conseillers pour en discuter ?"
+                "text": "Souhaiteriez-vous prendre rendez-vous avec un de nos conseillers pour en discuter ?"
               }
             ],
             "response_type": "text",
@@ -1762,7 +1812,7 @@
         ]
       },
       "parent": "node_3_1604414789018",
-      "conditions": "$webhook_result_1.message",
+      "conditions": "$webhook_result_1.message != \"false\"",
       "dialog_node": "response_4_1624538633079",
       "previous_sibling": "response_10_1604920316219"
     },
@@ -1898,6 +1948,11 @@
         }
       },
       "parent": "node_3_1604414789018",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_9_1642693852395"
+      },
       "conditions": "anything_else",
       "dialog_node": "response_8_1604415012697",
       "previous_sibling": "response_4_1624538633079"

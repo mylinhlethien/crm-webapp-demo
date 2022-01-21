@@ -31,7 +31,7 @@ You need to provision a **Watson Assistant** service instance on IBM Cloud.
 <br/>
 - Go to [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) and create an instance of the service.
 
-To create your dialog and assistant, you can download the [Watson Assistant skill](docs/skill-voice-agent-assurance-twilio-v2.json) and import it as a skill in the Watson Assistant interface in IBM Cloud.
+To create your dialog and assistant, you can download the [Watson Assistant skill](docs/voice-agent-assurance-twilio-v2-dialog.json) and import it as a skill in the Watson Assistant interface in IBM Cloud.
 
 You should then be able to access the dialog nodes, the intents and entities.
 
