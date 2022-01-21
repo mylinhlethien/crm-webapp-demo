@@ -11,21 +11,33 @@ var options = {
 
 var responseJSON = {};
 
-function main(params) {
-    new Promise((resolve, reject) => {
-        request(options).then(response => {
-            process.stdout.write(response);
-            responseJSON = JSON.parse(response);
-            resolve();
-        });
-        try {
-            return responseJSON;
-        } catch (e) {
-            process.stdout.write(e);
-            reject(e);  // <-- this also terminates the execution, but reports the failure back to the runtime
-        }
+function myDisplayer(responseJSON) {
+    //return responseJSON;
+    if (responseJSON.message != "") {
+        return responseJSON;
+    }
+    else {
+        return { message: "false" };
+    }
+}
+
+function getOdmAnswer(myCallback) {
+    request(options).then(response => {
+        process.stdout.write(response);
+        responseJSON = JSON.parse(response);
     });
-    return responseJSON;
+    if (responseJSON.message != "") {
+        return myCallback(responseJSON);
+    }
+}
+
+function main(params) {
+    if (getOdmAnswer(myDisplayer) == undefined || Object.keys(getOdmAnswer(myDisplayer)).length == 0) {
+        return { message: "false" };
+    }
+    else {
+        return getOdmAnswer(myDisplayer);
+    }
 }
 
 exports.main = main;
