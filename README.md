@@ -176,44 +176,17 @@ We will implement 3 different cloud functions for our demo.
 I advise you to try your Assistant dialog with the **Try** button at the top right-hand corner of your screen.
 You can follow the dialog here [demo.txt document](docs/demo.txt). If you manage to finish the dialog, your webhook works well.
 
+For the two following action functions, we will use kafka python package to produce real-time messages.
+
 2. one action function using Event Streams to produce messages
 
-For the two following action functions, you will need a code editor to create them since we will use Python packages not directly included in IBM Cloud functions, like kafka. 
+- Open [IBM Cloud Functions](https://cloud.ibm.com/functions/)
+- Create a Python action function
 - Copy the python code from [produceFunction.py file](docs/produceFunction.py)
-- Open a project in your code editor
-- paste the code in a file named "\__main__.py"
+- Paste it in your action function you just created
 - Set up your Event streams credentials (password and brokers list)
-
-- Open a terminal pointing to the directory of your project
-```
-pip install virtualenv
-```
-```
-virtualenv virtualenv
-```
-
-```
-source virtualenv/bin/activate
-```
-```
-(virtualenv) $ pip install kafka
-```
-```
-(virtualenv) $ deactivate
-```
-```
-zip -r pythonpackage.zip virtualenv __main__.py
-```
-```
-ibmcloud fn action create produceFunction </path/to/file/>pythonpackage.zip --kind python:3.7 --main joke
-```
-```
-ibmcloud fn action invoke produceFunction --result
-```
-
-For more details, you can check the [documentation](https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-prep#prep_python_local_virtenv).
-
-- In IBM Cloud Function, open the function you just created named **produceFunction** and navigate to the **Endpoints** tab.
+- Click on Save button
+- Navigate to the **Endpoints** tab.
 - Enable as Web action and copy the URL
 - Go to Watson Assistant, in the **Assistants** tab
 - Click on **Settings**
@@ -233,39 +206,16 @@ For more details, you can check the [documentation](https://cloud.ibm.com/docs/o
 3. one action function using Event Streams to end the conversation
 
 This function will be called after each conversation when the user hangs up.
+- Open [IBM Cloud Functions](https://cloud.ibm.com/functions/)
+- Create a Python action function
 - Copy the Python code from [produceEndMessage.py file](docs/produceEndMessage.py)
-- Open a project in your code editor
-- paste the code in a file named "\__main__.py"
+- Paste it in your action function you just created
 - Set up your Event streams credentials (password and brokers list)
-- Open a terminal pointing to the directory of your project
-
-```
-pip install virtualenv
-```
-```
-virtualenv virtualenv
-```
-
-```
-source virtualenv/bin/activate
-```
-```
-(virtualenv) $ pip install kafka
-```
-```
-(virtualenv) $ deactivate
-```
-```
-zip -r pythonpackage.zip virtualenv __main__.py
-```
-```
-ibmcloud fn action create produceEndMessage </path/to/file/>pythonpackage.zip --kind python:3.7 --main joke
-```
-```
-ibmcloud fn action invoke produceEndMessage --result
-```
-
-For more details, you can check the [documentation](https://cloud.ibm.com/docs/openwhisk?topic=openwhisk-prep#prep_python_local_virtenv).
+- Click on Save button
+- Navigate to the **Endpoints** tab.
+- Enable as Web action and copy the URL
+- Go to Watson Assistant, in the **Assistants** tab
+- Click on **Settings**
 
 - In IBM Cloud Function, open the function you just created named **produceEndMessage** and navigate to the **Endpoints** tab.
 - Enable as Web action and copy the URL
