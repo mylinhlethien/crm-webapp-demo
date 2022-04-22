@@ -273,11 +273,16 @@ You need to create an **ODM** account.
 <img src="docs/github_images/deployruleapp.png" width="700" height="auto">
 </p>
 
-- You can test your REST ODM service.
+- You will need to deploy the resource [voicebot-xom.zip](docs/voicebot-xom.zip) and create a library linked to this resource
+
+- You will then be able to test your REST ODM service.
 
 <p align="center">
 <img src="docs/github_images/RESTtestODM.png" width="700" height="auto">
 </p>
+
+You can follow this tutorial video for more details on how to deploy and test your rules.
+[![live demo](https://img.youtube.com/vi/HdCBB-48DGA/0.jpg)](https://youtu.be/HdCBB-48DGA) <br/>
 
 For more information about ODM on Cloud, refer to the [documentation](https://www.ibm.com/docs/en/odmoc?topic=ruleapps-deploying-ruleapp-archives).
 
